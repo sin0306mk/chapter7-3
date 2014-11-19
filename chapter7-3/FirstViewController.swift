@@ -22,7 +22,6 @@ class FirstViewController: UIViewController {
     }
     //画面表示時
     override func viewWillAppear(animated: Bool) {
-        
         var myApp = UIApplication.sharedApplication().delegate as AppDelegate
         myApp.myCount++
         println("①画面目 Count=\(myApp.myCount)")
