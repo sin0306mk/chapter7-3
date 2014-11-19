@@ -19,7 +19,12 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    //画面表示時
+    override func viewWillAppear(animated: Bool) {
+        var myApp = UIApplication.sharedApplication().delegate as AppDelegate
+        myApp.myCount++
+        println("②画面目 Count=\(myApp.myCount)")
+    }
 
 }
 
